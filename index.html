@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Expense Tracker</h1>
+    
+    <input type="text" placeholder="Enter your Expense name" id="expense">
+    <input type="number" placeholder="Enter your Expense Amount" id="Amount">
+    <input type="number" placeholder="Enter your Income Amount" id="InAmount">
+    <select id="item">
+        <option>Food</option>
+        <option>Electricity-Bills</option>
+        <option>Cars</option>
+        <option>Travelling</option>
+        <option>Medical-Insurance</option>
+    </select><br>
+    <button onclick="Tracking()">Add-Transaction</button>
+    
+    <div id="transactionsList"></div>
+    <div id="balanceDisplay">Your Total Balance: 0</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
